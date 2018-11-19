@@ -1,0 +1,911 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*-------------------navbar-----------------------------*/
+
+.navbar{
+	height: 60px;
+	opacity: 0.9;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 1000px){
+	.navbar{
+		height: auto;
+		opacity: 0.9;
+	}
+
+	.logoBrand{
+		color : #ffffff;
+		height: 60px;
+		width: 200px;
+	}
+}
+
+.logoBrand{
+	color : #ffffff;
+	height: 60px;
+	width: 200px;
+}
+
+.nav-item a{
+	height: 60px;
+	padding: 16px 10px 16px 10px !important;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	color: #ffffff !important;
+}
+
+.nav-item a:hover {
+	background-color: #00af43;
+	color: #ffffff !important;
+}
+
+.ml-auto{
+	right:0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.9;
+    min-width: 160px;
+   	text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: #00af43;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+@media screen and (max-width: 991px) {
+	.dropdown {
+		float: none;
+	}
+  	.dropdown-content {
+  		position: relative;
+  	}
+  	.dropdown .dropbtn {
+    	display: block;
+    	width: 100%;
+    	text-align: left;
+  	}
+}
+
+/*-------------------Content-------------------------------*/
+
+.Content{
+	margin-top: 0px  !important;
+	margin-bottom: 0px  !important;
+}
+
+/*-------------------Home-------------------------------*/
+
+#Home {
+    background-image: url("img/Home.jpg");
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position:center top;
+    position: relative;
+    background-repeat: no-repeat;
+ 	background-size: 100% 700px;
+    z-index: -10;
+}
+
+
+.Home-overlay{
+	background-color: rgba(0,0,0,0.4);
+	z-index: -5;
+}
+
+#Home .section-wel{
+	padding-top: 150px !important;
+	padding-bottom: 50px !important;
+	text-align: center;
+	min-height: 600px;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Home .welcome{
+	color:#ffffff;
+	font-size: 7em;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 30%;
+
+    //font-family: 'Indie Flower', cursive;
+    //font-family: 'Rokkitt', serif;
+    //font-family: 'Kaushan Script', cursive;
+
+    font-family: 'Tangerine', cursive;
+    opacity: 0;
+    transition: 2s ease-out;
+    transform: translateY(-50px);
+}
+
+
+#Home .welcome.welcome2{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#Home .to{
+	color:#ffffff;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 30%;
+	font-family: 'Tangerine', cursive;
+}
+
+#Home .cname{
+	color: #ffffff;
+	font-size: 4em;
+	font-weight: bold;
+	padding-left: 0px;
+	text-align: center;
+	padding-left: 30%; 
+	font-family: 'Kaushan Script', cursive;
+}
+
+#Home .quotes{
+	color:#ffffff;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 30%;
+	padding-top: 20px;
+	font-family: 'Rokkitt', serif;
+}
+
+@media screen and (max-width:500px){
+	#Home{
+		min-height: 400px;
+		background-position: center top;
+		background-size: 100% 700px;
+	}
+
+	#Home .section-wel{
+		padding-top: 200px !important;
+		padding-bottom: 150px !important;
+		min-height: 400px;
+	}
+
+	#Home .welcome{
+		font-size: 3.5em;
+		padding-left: 30%;
+	}
+
+	#Home .to{
+		font-size: 1.5em;
+		padding-left: 30%;
+	}
+
+	#Home .cname{
+		font-size: 1.5em;
+		padding-left: 30%;
+	}
+
+	#Home .quotes{
+		font-size: 1.5em;
+		padding-left: 30%;
+	}
+}
+
+/*-------------------AboutUs-------------------------------*/
+
+#AboutUs {
+	background: linear-gradient(to top, #ffffff,#00af43); //#fa364a red //#00af43 green
+}
+
+.section-imgAbout{
+	color: #ffffff;
+	text-align: center;
+	font-size: 200px;	
+	padding: 50px 80px 50px 80px !important;
+	opacity: 0;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	transform: translateX(50px);
+	transition: all 1s ease-out;
+	text-align: center;
+}
+
+.fa-leaf2{
+	opacity: 0.8;
+	transform: translateX(0px);
+}
+
+@media only screen and  (max-width: 767px ){
+	.section-imgAbout{
+		font-size: 100px;	
+		padding: 20px 20px 20px 20px !important;
+	}
+}
+
+@media only screen and  (max-width: 1000px){
+	.section-imgAbout{
+		font-size: 100px;	
+		padding: 10px 10px 10px 10px !important;
+	}
+}
+
+.section-title1{
+	padding-top: 90px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 50px !important;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 1s ease-out;
+}
+
+.section-title1.title1{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#AboutUs .section-description1{
+	padding-left: 50px !important;
+	padding-bottom: 0px !important;
+	padding-right: 50px !important;
+	padding-top: 50px !important;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1em;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.section-title2{
+	padding-top: 50px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 50px !important;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 1s ease-out;
+}
+
+.section-title2.title2{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#AboutUs .section-description2{
+	padding-left: 50px !important;
+	padding-bottom: 0px !important;
+	padding-right: 50px !important;
+	padding-top: 50px !important;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1em;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.section-title3{
+	padding-top: 50px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 50px !important;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 1s ease-out;
+}
+
+.section-title3.title3{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#AboutUs .section-description3{
+	padding-left: 50px !important;
+	padding-bottom: 50px !important;
+	padding-right: 50px !important;
+	padding-top: 50px !important;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1em;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*-------------------Products-------------------------------*/
+
+#Products {
+	background: linear-gradient(to bottom, transparent, #f7f4f4);
+	border: none solid transparent;
+}
+
+#Products .section-title:after {
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0px auto 0;
+	position: center;
+	width: 210px;
+	margin-top: 10px;
+	background-color: #00af43;
+	opacity: 0.8;
+}
+
+#Products .section-title {
+	padding-top: 90px !important;
+	padding-right: 0px !important;
+	padding-bottom: 50px !important;
+	padding-left: 0px !important;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	opacity: 0;
+	transform: scale(0, 0);
+	transition: 1s ease-out;
+}
+
+#Products .section-title.protitle {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+
+/*-------------------Products sayloHairOil-------------------------------*/
+
+#Products .sayloHairOil{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 450px !important;
+	width: 200px !important;
+	opacity: 0;
+	transform: translateX(20px);
+	transition: 1s ease-out;
+
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .sayloHairOil.prodAdd1{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+@media screen and (max-width: 786px){
+	#Products .sayloHairOil{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;	
+		height: 400px !important;
+		width: 200px !important;		
+	}
+}
+
+@media screen and (max-width: 767px){
+	#Products .sayloHairOil{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		display: block;
+		height: 350px !important;
+		width: 150px !important;	
+	}
+}
+
+#Products .section-ProductName1 {
+	padding-top: 10px !important;
+	padding-right: 0px !important;
+	padding-bottom: 10px !important;
+	padding-left: 0px !important;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00af43;
+	opacity: 1;
+}
+
+#Products .section-description1{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: 1s ease-out;
+	transform: translateX(-50px);
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .section-description1.descAdd1{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.Ingredient{
+	font-weight: bold;
+}
+
+/*-------------------Products shikakai-------------------------------*/
+
+#Shikakai{
+	padding-top: 50px !important;
+}
+
+
+#Products .shikakai{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 350px !important;
+	width: 200px !important;
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: 1s ease-out;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .shikakai.prodAdd2{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+@media screen and (max-width: 786px){
+	#Products .shikakai{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;	
+		height: 350px !important;
+		width: 200px !important;			
+	}
+}
+
+@media screen and (max-width: 767px){
+	#Products .shikakai{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		display: block;	
+		height: 350px !important;
+		width: 150px !important;	
+	}
+}
+
+#Products .section-ProductName2 {
+	padding-top: 10px !important;
+	padding-right: 0px !important;
+	padding-bottom: 10px !important;
+	padding-left: 0px !important;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00af43;
+	opacity: 1;
+}
+
+#Products .section-description2{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: 1s ease-out;
+	transform: translateY(20px);
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .section-description2.descAdd2{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/*-------------------Products Neem Face Wash-------------------------------*/
+
+#Neem{
+	padding-top: 50px !important;
+}
+
+#Products .facewash{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 350px !important;
+	width: 200px !important;
+	opacity: 0;
+	transform: translateX(50px);
+	transition: 1s ease-out;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .facewash.prodAdd3{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+@media screen and (max-width: 786px){
+	#Products .facewash{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		height: 350px !important;
+		width: 200px !important;		
+	}
+}
+
+@media screen and (max-width: 767px){
+	#Products .facewash{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		display: block;
+		height: 350px !important;
+		width: 150px !important;
+	}
+}
+
+
+#Products .section-ProductName3 {
+	padding-top: 10px !important;
+	padding-right: 0px !important;
+	padding-bottom: 10px !important;
+	padding-left: 0px !important;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00af43;
+	opacity: 1;
+}
+
+#Products .section-description3{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: 1s ease-out;
+	transform: translateX(-50px);
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .section-description3.descAdd3{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+/*-------------------Products syrup-------------------------------*/
+
+#Syrup{
+	padding-top: 50px !important;
+}
+
+#Products .syrup{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 250 !important;
+	width: 150px !important;
+	opacity: 0;
+	transform: translateX(-50px);
+	transition: 1s ease-out;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .syrup.prodAdd4{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+@media screen and (max-width: 786px){
+	#Products .syrup{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		height: 250px !important;
+		width: 150px !important;		
+	}
+}
+
+@media screen and (max-width: 767px){
+	#Products .syrup{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		display: block;
+		height: 250px !important;
+		width: 150px !important;
+	}
+}
+
+#Products .section-ProductName4 {
+	padding-top: 10px !important;
+	padding-right: 0px !important;
+	padding-bottom: 10px !important;
+	padding-left: 0px !important;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00af43;
+	opacity: 1;
+}
+
+#Products .section-description4{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: justify;
+	font-family: 'Rokkitt', serif;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: 1s ease-out;
+	transform: translateY(50px);
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#Products .section-description4.descAdd4{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/*-------------------Careers-------------------------------*/
+
+#Careers {
+	background: linear-gradient(to bottom, #f7f4f4, #00af43);
+	border-top: none solid transparent;
+
+}
+
+#Careers .section-title:after {
+	//background: #dedede none repeat scroll 0 0;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0px auto 0;
+	position: center;
+	width: 180px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+#Careers .section-title {
+	padding-top: 90px !important;
+	padding-right: 0px !important;
+	padding-bottom: 50px !important;
+	padding-left: 0px !important;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	opacity: 0;
+	transform: scale(0, 0);
+	transition: 1s ease-out;
+}
+
+#Careers .section-title.Careertitle {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+#Careers .section-description{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: justify;
+	font-family: 'Rokkitt', cursive;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.query{
+	font-weight: bold;
+}
+
+/*-------------------ContactUs-----------------------------*/
+
+#ContactUs {
+	background-image: url("img/ContactUs.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+	border-top: none solid transparent;
+	z-index: -10;
+}
+
+.ContactUs-overlay{
+	background-color:rgba(0,0,0,0.5);
+	z-index: -5;
+}
+
+#ContactUs .section-title:after {
+	//background: #dedede none repeat scroll 0 0;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0px auto 0;
+	position: center;
+	width: 220px;
+	margin-top: 10px;
+	background-color: #00af43;
+	opacity: 0.8;
+}
+
+#ContactUs .section-title {
+	padding-top: 90px !important;
+	padding-right: 0px !important;
+	padding-bottom: 50px !important;
+	padding-left: 0px !important;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff;
+	opacity: 0;
+	transform: scale(0, 0);
+	transition: 1s ease-out;
+}
+
+#ContactUs .section-title.ContactUstitle {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+#ContactUs .section-cinfo{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: ;
+	color: #ffffff;
+	font-family: 'Rokkitt', serif;
+}
+
+#ContactUs .fa{
+	font-size: 25px;
+}
+
+#ContactUs .fa-industry {
+	color:#dee634;   /*dee634*/
+}
+
+#ContactUs .fa-map-marker {
+	color: #fa364a;
+}
+
+#ContactUs .fa-whatsapp {
+	color: #00af43;
+}
+
+#ContactUs .fa-mobile-phone {
+	color: #51e2ff;
+}
+
+#ContactUs .para{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity: 0;
+	transform: translateX(50px);
+	transition: 1s ease-out;
+}
+
+#ContactUs .para.cinfo {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+/*-------------------footer-----------------------------*/
+
+.Footer {
+	background-color: #000000;
+}
+
+.section-footer{
+	height: 100px !important;
+	color: #ffffff;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+	font-family: 'Rokkitt', serif;
+}
